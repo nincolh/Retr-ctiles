@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FronterasRrtractiles</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+  <a-cylinder src="cilindro.jpg" position="1 0.75 -3" radius="0.5" height="0.2" color="#FFC65D"></a-cylinder>
+  <a-plane  position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" scale= "13 13 13"></a-plane>
+  <a-sky src="./cielo.jpg"></a-sky>
+        
+   <a-scene>
+   <a-assets>
+   <a-asset-item id="seraquesi" src="./seraquesi.gltf" ></a-asset-item>
+   </a-assets>
+          
+  <a-gltf-model src= "#seraquesi" position="-1 0.5 -3" scale= " 0.2 0.2  0.2"></a-gltf-model> 
+
+  <a-scene>
+  <a-assets>
+  <a-asset-item id="mantavestido" src="./mantavestido.gltf" ></a-asset-item>
+  </a-assets>
+            
+  <a-gltf-model src= "#mantavestido" position="-1 0.9 -3" scale= " 1  1  1"></a-gltf-model> 
+  
+  <a-scene>
+  <a-assets>
+  <a-asset-item id="fronteraretractil" src="./fronteraretractil.gltf" ></a-asset-item>
+  </a-assets>
+              
+  <a-gltf-model src= "#fronteraretractil" position="-1 0.4 -3" scale= " 3  3  3"></a-gltf-model> 
+                
+                
+  </a-scene>
+    </a-scene>
+</body>
+
+</html>
